@@ -81,6 +81,10 @@ spec:
       - env:
         - name: WORDPRESS_DB_HOST
           value: mysql
+        - name: WORDPRESS_DB_USER
+          value: worpress
+        - name: WORDPRESS_DEBUG
+          value: 1
         - name: WORDPRESS_DB_PASSWORD
           valueFrom:
             secretKeyRef:
